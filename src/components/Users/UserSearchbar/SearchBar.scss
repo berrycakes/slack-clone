@@ -1,0 +1,32 @@
+.searchUser-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 30%;
+  input {
+    background-color: rgba(93, 61, 94, 255);
+    height: 2rem;
+    border-radius: 5px;
+    width: 700px;
+    margin: 5px auto;
+  }
+}
+
+.filteredUsers {
+  z-index: 2;
+  list-style: none;
+  padding: 2rem;
+  font-size: 1rem;
+  background: white;
+  height: auto;
+  color: black;
+  
+    img {
+      height: 1rem;
+      display: inline;
+    }
+    h3 {
+      display: inline;
+    }
+}
+

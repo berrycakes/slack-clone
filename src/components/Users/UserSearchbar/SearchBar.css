@@ -1,0 +1,30 @@
+.searchUser-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 30%;
+}
+.searchUser-container input {
+  background-color: #5d3d5e;
+  height: 2rem;
+  border-radius: 5px;
+  width: 700px;
+  margin: 5px auto;
+}
+
+.filteredUsers {
+  z-index: 2;
+  list-style: none;
+  padding: 2rem;
+  font-size: 1rem;
+  background: white;
+  height: auto;
+  color: black;
+}
+.filteredUsers img {
+  height: 1rem;
+  display: inline;
+}
+.filteredUsers h3 {
+  display: inline;
+}/*# sourceMappingURL=SearchBar.css.map */

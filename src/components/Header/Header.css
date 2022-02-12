@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+.header-help-btn {
+  position: relative;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 20px;
+  color: white;
+}
+
+.searchbar-container {
+  width: 100%;
+  height: 100%;
+  background-color: #350d36;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.header-search {
+  position: relative;
+  width: 48vw;
+  height: 70%;
+  font-size: 18px;
+  transform: translateY(1px);
+  background-color: transparent;
+}
+
+.header-search-btn {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  background-color: #5d3d5e;
+  border-style: none;
+  color: #ffffff;
+  font-weight: 300;
+  font-family: inherit;
+  font-size: 1rem;
+  z-index: -1;
+  cursor: pointer;
+}
+.header-search-btn > .icon {
+  margin-right: 1rem;
+  font-size: 1rem;
+}
+
+.header-history {
+  margin-right: 1rem;
+}
+
+.header-help {
+  position: relative;
+  margin-left: 1rem;
+}
+
+.header-side-icons {
+  font-size: 1.5rem;
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.header-flex-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-user-img {
+  position: absolute;
+  right: 2rem;
+  height: 2.6rem;
+  width: 2.6rem;
+  overflow: hidden;
+}
+.header-user-img > img {
+  height: 90%;
+  border-radius: 4px;
+}/*# sourceMappingURL=Header.css.map */

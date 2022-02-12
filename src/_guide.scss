@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+// ------------------------------------ //
+//  FONTS
+// ------------------------------------ //
+$sans: 'Lato', sans-serif;
+
+// ------------------------------------ //
+//  COLORS
+// ------------------------------------ //
+
+$purple: #3f0e40;
+$purple-dark: #350d36;
+$gray: #6f6f6f;
+$lightgray: #bebebe;
+$links: #3c71a6;
+$blue: #1263a3;
+$online: #56a97a;
+$green: #007a5a;
+$warning-red: #d33821;
+
+// white with % opacity
+$white: #ffffff;
+$white-90: #ffffff90;
+$white-75: #ffffff75;
+$white-50: #ffffff50;
+$white-10: #ffffff10;
+
+// Black with % opacity
+$black: #1d1c1d;
+$black-90: #1d1c1d90;
+$black-75: #1d1c1d75;
+$black-50: #1d1c1d50;
+$black-10: #1d1c1d10;
+
+$border-thin: 1px solid $white-10;
+$border-thin-dark: 1px solid $black-50;

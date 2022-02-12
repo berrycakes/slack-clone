@@ -1,0 +1,228 @@
+.messages-container {
+  display: grid;
+  grid-template-rows: 50px 50px 1fr 120px;
+  grid-column: 2 / 3;
+  height: 100%;
+  color: $black;
+  background-color: whitesmoke;
+}
+
+.messages-scroll-container {
+  padding: 0 20px;
+  height: calc(100vh - 230px);
+  display: flex;
+  flex-direction: column-reverse;
+  overflow-y: scroll;
+  margin-top: 5px;
+  grid-row: 2 / 4;
+}
+
+.empty-message-container {
+  height: calc(100vh - 280px);
+  display: flex;
+  flex-direction: column-reverse;
+  overflow-y: scroll;
+  margin-top: 5px;
+  grid-row: 3 / 4;
+}
+
+.send-message-input {
+  margin: 0 1em;
+  background-color: $white;
+  display: grid;
+  grid-template-columns: 1fr 60px;
+  grid-template-rows: 1fr;
+  grid-row: 4 / 5;
+  width: 97%;
+  height: 80px;
+  align-items: center;
+  padding: 8px 12px;
+  border: solid 1px $lightgray;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  & textarea {
+    resize: none;
+    padding: 5px 5px;
+    font-size: 1rem;
+    font-family: $sans;
+    vertical-align: text-top;
+    height: 100%;
+    border: none;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.send-message-buttons-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.send-message-button {
+  width: 50px;
+  height: 50px;
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  border: none;
+  background-color: transparent;
+  color: gray;
+}
+
+.send-message-button-active {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  border: none;
+  background-color: $green;
+  color: $white;
+}
+
+// message
+.message-container {
+  padding: 5px 20px;
+  display: flex;
+  width: 100%;
+  // border-bottom: solid 1px $lightgray;
+}
+.message-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 5px;
+}
+.message-headers {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.message-details-sender {
+  font-weight: 700;
+  padding: 0 10px;
+}
+
+.message-details-time {
+  color: $gray;
+  font-size: 0.8rem;
+}
+
+.message-details-body {
+  font-family: $sans;
+  color: $black;
+  padding: 5px 10px;
+}
+
+.messages-container-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  grid-row: 1 / 2;
+  background-color: $white;
+  margin: 0;
+  width: 100%;
+  color: $black;
+  font-size: 1.2rem;
+  font-weight: 900;
+  font-family: $sans;
+  border-bottom: $border-thin-dark;
+  & img {
+    height: 24px;
+    width: 24px;
+    margin: 5px;
+    border-radius: 5px;
+  }
+}
+
+.messages-receiver-button {
+  margin: 5px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: $sans;
+}
+
+.messages-search-user {
+  padding: 10px 20px;
+  grid-row: 2 / 3;
+  background-color: $white;
+  color: $gray;
+  height: 52px;
+  border-bottom: $border-thin-dark;
+  display: flex;
+  align-items: center;
+  & p {
+    padding: 5px;
+  }
+}
+
+.messages-searchbar {
+  display: flex;
+  align-items: center;
+  font-family: $sans !important;
+  font-size: 1rem !important;
+  padding: 0;
+  display: block !important;
+  // flex-direction: column-reverse !important ;
+  left: 310px !important;
+  & .userlist {
+    background-color: $white !important;
+    border: $border-thin-dark;
+    border-radius: 10px;
+    box-shadow: 3px 3px 20px 0px $black-50;
+    position: absolute !important;
+    padding: 0.5em !important;
+    overflow-y: scroll !important;
+    max-height: 15em;
+    width: 74em;
+    & h3 {
+      font-size: 1rem;
+    }
+    & a {
+      text-decoration: none;
+      &:visited {
+        text-decoration: none;
+      }
+    }
+    & img {
+      height: 20px;
+      width: 20px;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+    & .filteredUsers {
+      padding: 10px 10px;
+      display: flex;
+      align-items: center;
+    }
+  }
+  & input {
+    background-color: $white !important;
+    border: transparent !important;
+    padding: 0 1em;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.new-message {
+  color: $gray;
+  padding: 2em;
+  width: 100%;
+  text-align: center;
+  border-bottom: $border-thin-dark;
+  margin-bottom: 1em;
+}

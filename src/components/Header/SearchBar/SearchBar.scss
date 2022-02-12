@@ -1,0 +1,140 @@
+@import '../../../home';
+
+.searchBar_container{
+  width: 100vw;
+  height: 100%;
+  padding-top: .5rem;
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  overflow-y: hidden;
+  a{
+    text-decoration: none;
+  }
+}
+
+.searchBar_items{
+  width: 60%;
+  border-radius: 7px;
+  background-color: white;
+  z-index: 10;
+}
+
+.searchBar_input{
+  height: 6vh;
+  padding-left: 4rem;
+  padding-right: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid #D3D3D3;
+  >input{
+      width: 90%;
+      outline: none;
+      border: none;
+      font-family: inherit;
+      font-size: 1.4rem;
+      font-weight: 300;
+      padding: .5rem;
+      &::placeholder {
+        font-size: 1rem;
+      }
+  }
+
+  >.searchBar-close-icon{
+      float: right;
+  }
+}
+
+.searchBar-icon{
+  // flex-grow: 1;
+  font-size: 1.5rem;
+}
+
+.icon-close{
+  padding: 0.5rem;
+  font-size: 3.5rem;
+  cursor: pointer;
+}
+
+.searchBar_body{
+  padding: 2rem;
+  height: 17vh;
+  font-size: 1.3rem;
+  color: #D3D3D3;
+}
+
+.searchBar-body-buttons{
+  margin-top: 1rem;
+  width: 50%;
+  height: 5vh;
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.searchBar-body-buttons > button{
+  padding: 0 12px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background-color: rgba(29,155,209,.1);
+  cursor: pointer;
+}
+.searchBar-body-buttons > button:hover{
+  background-color: rgba(0, 0, 255, 0.705);
+  color: #ffffff;
+}
+
+.searchBar_footer{
+  width: 100%;
+  height: 6.7vh;
+  padding: 1rem;
+  font-size: 1.3rem;
+  background-color: #f8f8f8;
+  border-radius: 7px;
+}
+
+.searchBar_results{
+  width: 100%;
+  // padding-top: 2rem;
+  max-height: 30rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  .searchBar_results_items{
+      display: flex;
+      align-items: center;
+      padding: 1rem;
+      padding-left: 3rem;
+      cursor: pointer;
+      h3{
+          font-family: inherit;
+          font-size: 1rem;
+          font-weight: 700;
+          padding-left: 1rem;
+          letter-spacing: .2px;
+          color: $black;
+        }
+      
+        >img{
+          background-size: cover;
+          overflow: hidden;
+          border-radius: 5px;
+          height: 1.5rem;
+          color: black;
+        }
+        &:hover{
+          background-color: #135999;
+          >h3{
+              color: $white;
+          }
+      }
+  }
+
+ 
+}
+
+.footer-items{
+  float: right;
+}

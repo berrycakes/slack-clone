@@ -1,0 +1,157 @@
+.Error-page-container{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.error-page-header-container {
+    width: 100%;
+    height: 8%;
+    display: flex;
+}
+
+.errorpage-header-logo {
+    padding-left: 16px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.error-page-header-links {
+    width: 70%;
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    align-items: center;
+
+    ul {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        color: #a0a0a0;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: bold;
+
+        li {
+            margin-right: 8px;
+            padding: 8px;
+            border-radius: 4px;
+        }
+
+        li:hover {
+            background-color: #b1b0b162;
+        }
+    }
+}
+
+.error-page-header-login {
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+
+    button {
+        background: none;
+        outline: none;
+        border: none;
+        color:#a0a0a0;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 10px 14px;
+        cursor: pointer;
+        box-shadow: inset 0 0 0 2px #a0a0a0;
+        border-radius: 4px;
+    }
+
+    button:hover {
+        box-shadow: inset 0 0 0 2px #797979;
+        color: #797979;
+        border-radius: 4px;
+    }
+}
+
+.error-page-main-container {
+    width: 100%;
+    height: 72%;
+
+    background: url(https://a.slack-edge.com/80588/img/404/marrakesh-meadow-80.jpg) fixed center;
+    background-size: cover;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.error-container {
+    width: 50%;
+    height: 40%;
+    z-index: 1;
+
+    margin-top: 64px;
+    padding: 24px;
+    background-color: $white-90;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.error-title {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.warning-red {
+    color: $warning-red;
+}
+
+.error-page-footer-container {
+    width: 100%;
+    height: 10%;
+    
+    .error-footer-links{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+
+        .colfooter {
+            padding: 24px; 
+        }
+
+        .c1 {
+            .error-footer-links-title {
+                color: #de4e2b;
+            }
+        }
+
+        .c2 {
+            .error-footer-links-title {
+                color: #e32072;
+            }
+        }
+
+        .c3 {
+            .error-footer-links-title {
+                color: #007a5a;
+            }
+        }
+
+        .c4 {
+            .error-footer-links-title {
+                color: #4b6bc6;
+            }
+        }
+
+        .error-footer-links-title {
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .item-footer-link {
+            margin: 8px 0;
+        }
+    }
+}

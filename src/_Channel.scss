@@ -1,0 +1,81 @@
+// Variables
+$channel-header: 320px;
+$channel-textinput: 104px;
+
+.Channel-container {
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px;
+}
+
+.Channel-header-container {
+    display: flex;
+    align-items: center;
+}
+
+.btn-rectangle-medium {
+    outline: none;
+    border: 0.5px solid whitesmoke;
+    background-color: whitesmoke;
+
+    padding: 8px 16px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1;
+
+    span.lock, span.icon-addmembers {
+        padding-right: 4px;
+        font-size: 16px;
+    }
+
+    span.channelname {
+        font-weight: 700;
+    }
+
+    span.addmembers {
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    span.chevrondown {
+        padding-left: 4px;
+        padding-top: 4px;
+        font-size: 8px;
+    }
+}
+
+.btn-channel-title {
+    position: absolute;
+    top: 48px;
+    left: 280px;
+}
+
+.btn-channel-addUsers {
+    position: absolute;
+    top: 48px;
+    right: 8px;
+}
+
+button.btn-channel-addUsers:hover {
+    span.addmembers:hover {
+        font-weight: 700;
+    }
+}
+
+.icon-membersNum {
+    font-size: 14px;
+    font-weight: bold;
+    color: #b1b1b1;
+}
+
+.filtered-container {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+
+    img {
+        margin-right: 8px;
+    }
+}
