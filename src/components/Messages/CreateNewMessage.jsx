@@ -34,7 +34,7 @@ const CreateNewMessage = () => {
       .then((res) => console.log(res))
       .catch((error) => console.log(error))
       .finally(() => {
-        navigate(`../${uid}/messages/${id}`)
+        navigate(`/slack-clone/${uid}/messages/${id}`)
       })
   }
 

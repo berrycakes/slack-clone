@@ -7,7 +7,7 @@ const SearchBar = ({ className, type }) => {
   const [userList, setUserList] = useState([])
   const [searchInput, setSearchInput] = useState('')
 
-  let { uid, id } = useParams();
+  let { uid, id } = useParams()
 
   useEffect(() => {
     getAllUsers()
@@ -52,17 +52,22 @@ const SearchBar = ({ className, type }) => {
               const { id, email } = user
               return (
                 // added search navlink props to change navlink address when REUSED
-                type === 'messages' 
-                ? <NavLink to={`/${uid}/new-message/${id}`} key={id}>
+                type === 'messages' ? (
+                  <NavLink
+                    to={`/slack-clone/${uid}/new-message/${id}`}
+                    key={id}
+                  >
+                    <div className="filteredUsers">
+                      <img src={avatar} />
+                      <h3>{email}</h3>
+                    </div>
+                  </NavLink>
+                ) : (
                   <div className="filteredUsers">
                     <img src={avatar} />
                     <h3>{email}</h3>
                   </div>
-                </NavLink>
-                : <div className="filteredUsers">
-                  <img src={avatar} />
-                  <h3>{email}</h3>
-                </div>
+                )
               )
             })}
         </div>

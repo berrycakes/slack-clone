@@ -39,7 +39,7 @@ function App() {
       {!authenticated && (
         <>
           <Route
-            path="/login"
+            path="slack-clone/login"
             element={
               <Login
                 authenticate={() => setAuthenticated(true)}
@@ -49,7 +49,7 @@ function App() {
             }
           />
           <Route
-            path="/"
+            path="slack-clone/"
             element={
               <Login
                 authenticate={() => setAuthenticated(true)}
@@ -58,24 +58,39 @@ function App() {
               />
             }
           />
-          <Route path="/register" element={<Register />} />
+          <Route path="slack-clone/register" element={<Register />} />
         </>
       )}
 
       {authenticated && (
         <>
-          <Route path="/" element={<Home />}>
-            <Route path=":uid/" element={<CreateNewMessage />} />
-            <Route path=":uid/new-message/" element={<CreateNewMessage />} />
-            <Route path=":uid/new-message/:id" element={<CreateNewMessage />} />
-            <Route path=":uid/messages/:id" element={<Messages />} />
-            <Route path=":uid/channels/:channelId" element={<Channel />} />
-            <Route path=":uid/channels/:id" element={<Channel />} />
+          <Route path="/slack-clone/" element={<Home />}>
+            <Route path="/slack-clone/:uid/" element={<CreateNewMessage />} />
+            <Route
+              path="/slack-clone/:uid/new-message/"
+              element={<CreateNewMessage />}
+            />
+            <Route
+              path="/slack-clone/:uid/new-message/:id"
+              element={<CreateNewMessage />}
+            />
+            <Route
+              path="/slack-clone/:uid/messages/:id"
+              element={<Messages />}
+            />
+            <Route
+              path="/slack-clone/:uid/channels/:channelId"
+              element={<Channel />}
+            />
+            <Route
+              path="/slack-clone/:uid/channels/:id"
+              element={<Channel />}
+            />
           </Route>
         </>
       )}
       <Route
-        path="/logout/login"
+        path="/slack-clone/login"
         element={
           <Login
             authenticate={() => setAuthenticated(false)}

@@ -46,7 +46,7 @@ function Login({ authenticate, handleUserData, handleUserHeaders }) {
           setHasError(false)
           reset()
           authenticate()
-          navigate(`/${uid}`)
+          navigate(`/slack-clone/${uid}`)
           window.location.reload()
         } else {
           setHasError(true)
@@ -138,7 +138,7 @@ function Login({ authenticate, handleUserData, handleUserHeaders }) {
           </div>
         </form>
         <div className="register-link">
-          <NavLink to={'./register'}>Don't have an account?</NavLink>
+          <NavLink to={'slack-clone/register'}>Don't have an account?</NavLink>
         </div>
       </div>
       <LoginFooter />

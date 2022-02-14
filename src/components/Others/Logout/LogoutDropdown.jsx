@@ -5,7 +5,7 @@ function LogoutDropdown({ handleClose }) {
   let navigate = useNavigate()
   const signout = () => {
     sessionStorage.clear()
-    navigate('/')
+    navigate('/slack-clone')
     window.location.reload()
   }
 
@@ -17,7 +17,7 @@ function LogoutDropdown({ handleClose }) {
           <li>Preferences</li>
           <hr></hr>
           <li onClick={signout}>
-            <Link to="/logout/login">Sign out of Group 3</Link>
+            <Link to="/slack-clone/login">Sign out of Group 3</Link>
           </li>
         </ul>
       </div>

@@ -48,7 +48,10 @@ const SearchBar = ({ className, searchNavLink }) => {
               const { id, email } = user
               return (
                 // added search navlink props to change navlink address when REUSED
-                <NavLink to={searchNavLink + `${id}`} key={id}>
+                <NavLink
+                  to={'/slack-clone/' + searchNavLink + `${id}`}
+                  key={id}
+                >
                   <div className="filteredUsers">
                     <img src={avatar} />
                     <h3>{email}</h3>

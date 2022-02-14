@@ -43,7 +43,10 @@ const RecentDms = () => {
           >
             <img src={avatar} />
             <div className="online-status-on"></div>
-            <NavLink to={`/${params.uid}/messages/${id}`} key={index}>
+            <NavLink
+              to={`/slack-clone/${params.uid}/messages/${id}`}
+              key={index}
+            >
               <span>{email}</span>
             </NavLink>
           </li>

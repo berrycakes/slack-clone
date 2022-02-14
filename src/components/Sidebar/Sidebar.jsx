@@ -15,7 +15,7 @@ const Sidebar = ({
   handleOpenNewChannel,
   channels,
   headers,
-  handleToggleRender
+  handleToggleRender,
 }) => {
   let navigate = useNavigate()
   let { uid } = useParams()
@@ -27,10 +27,11 @@ const Sidebar = ({
   const displayChannels = channels
     ? channels.map((channel, index) => {
         return (
-          <NavLink to={`${uid}/channels/${channel.id}`} key={index}>
-            <ChannelList index={index} 
-            name={channel.name} 
-            key={index} />
+          <NavLink
+            to={`/slack-clone/${uid}/channels/${channel.id}`}
+            key={index}
+          >
+            <ChannelList index={index} name={channel.name} key={index} />
           </NavLink>
         )
       })
@@ -72,8 +73,7 @@ const Sidebar = ({
             )}
             <span>Channels</span>
             <div className="sidebar-add-icon">
-              <FiPlus onClick={handleOpenNewChannel} 
-              title='channel-add-btn'/>
+              <FiPlus onClick={handleOpenNewChannel} title="channel-add-btn" />
             </div>
           </div>
           {showChannelList ? (

@@ -39,7 +39,7 @@ function Register() {
           setHasError(false)
           setDisplaySuccessMessage(true)
           setTimeout(() => {
-            navigate('/')
+            navigate('/slack-clone')
           }, 1000)
           reset()
         } else {
