@@ -23,8 +23,6 @@ const RecentDms = () => {
     // console.log(loginData)
   }, [])
 
-  console.log(recentDms)
-
   const userIds = recentDms.map((user) => user.id)
   // console.log(userIds)
   const filteredUsers = recentDms.filter(({ id }, index) => {
